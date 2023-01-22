@@ -10,7 +10,7 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="TopsisSimranjit102017060",
-    version="3.0.0",
+    version="2.0.1",
     description="Python library for dealing with Multiple Criteria Decision Making(MCDM) problems",
     long_description=README,
     long_description_content_type="text/markdown",
@@ -27,4 +27,10 @@ setup(
     packages=["TopsisSimranjit102017060"],
     include_package_data=True,
     install_requires=[],
+    entry_points={
+        "console_scripts":[
+            "topsis=TopsisSimranjit102017060.topsis:main"
+        ]
+    }
+
 )
